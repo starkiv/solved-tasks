@@ -23,3 +23,16 @@ function findNextSquare(sq){
    else return arr[1] 
 }
 ```
+#### Formatting decimal places #1
+```javascript
+function twoDecimalPlaces(number) {
+if (number<0) return Math.ceil((number)*100)/100
+    else return Math.floor((number)*100)/100
+}
+```
+#### How many times should I go?
+```javascript
+function howManyTimes(a, i) {
+    return Math.ceil(a/i)
+}
+```
