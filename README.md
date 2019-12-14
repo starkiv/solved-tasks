@@ -2,6 +2,8 @@
 * task 1
 ```javascript
 const a = 123;
+```
+```javascript
 function squares(x, n) {
 let s = 1;
 let arr = [];
@@ -12,6 +14,8 @@ arr.push (Math.pow(x,s))
 if (n>0) arr.unshift(x)
 return arr
 }
+```
+```javascript
 function findNextSquare(sq) {
  let arr =[];
   for (let i=sq; i<sq+700000; i++){
@@ -19,5 +23,4 @@ function findNextSquare(sq) {
   }
   if ((Number.isInteger(Math.sqrt(sq)) === false)) return -1
    else return arr[1] 
-}
 ```
