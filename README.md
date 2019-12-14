@@ -1,5 +1,5 @@
 # solved-tasks
-####Squares sequence
+#### Squares sequence
 ```javascript
 function squares(x, n){
   let s = 1;
@@ -12,7 +12,7 @@ function squares(x, n){
   return arr
 }
 ```
-####Find the next perfect square!
+#### Find the next perfect square!
 ```javascript
 function findNextSquare(sq){
  let arr =[];
