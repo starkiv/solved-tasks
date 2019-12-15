@@ -53,3 +53,21 @@ function excludingVatPrice(p){
   else return +(p/1.15).toFixed(2)
 }
 ```
+#### Parse nice int from char problem
+```javascript
+function getAge(inputString){
+ return parseInt(inputString, 10)
+}
+```
+#### Hex to Decimal
+```javascript
+function hexToDec(hexString){
+  return parseInt(hexString, 16)
+}
+```
+#### Bin to Decimal
+```javascript
+function binToDec(bin){
+return parseInt(bin, 2)
+}
+```
