@@ -36,3 +36,13 @@ function howManyTimes(a, i) {
     return Math.ceil(a/i)
 }
 ```
+#### Lario and Muigi Pipe Problem
+```javascript
+function pipeFix(n){
+  let j = [];
+     for (let i=n[0]; i<=n[n.length-1]; i++){
+     j.push(i)
+     }
+     return j
+}
+```
