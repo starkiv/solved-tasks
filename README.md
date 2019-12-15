@@ -82,3 +82,37 @@ return sum
     
 };
 ```
+#### What is type of variable?
+```javascript
+function type(v) {
+  let x = {}.toString.call(v);
+  switch (x){
+   case '[object Array]': return 'array';
+   case '[object Object]': return 'object';
+   case '[object String]': return 'string';
+   case '[object Number]': return 'number';
+   case '[object Date]': return 'date';
+   case '[object Null]': return 'null';
+   case '[object Undefined]': return 'undefined';
+   
+   }
+}
+```
+#### Is every value in the array an array?
+```javascript
+function arrCheck(v){
+for (let i = 0; i < v.length; i++){
+  if (!Array.isArray(v[i])) return false
+}
+return true
+}
+```
+#### Enumerable Magic #3 - Does My List Include This?
+```javascript
+function include(arr, item){
+for (let i = 0; i < arr.length; i++){
+  if (arr[i] === item) return true
+}
+return false
+}
+```
