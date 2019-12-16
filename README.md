@@ -116,3 +116,41 @@ for (let i = 0; i < arr.length; i++){
 return false
 }
 ```
+#### How good are you really?
+```javascript
+function betterThanAverage(classPoints, yourPoints) {
+let sum = 0;  
+for (let i = 0; i < classPoints.length; i++){  
+  sum = sum + classPoints[i]; 
+}
+let p = sum/classPoints.length;
+if(p<=yourPoints) return true
+if(p>yourPoints) return false
+}
+```
+#### Difference of Volumes of Cuboids
+```javascript
+function findDifference(a, b) {
+let a1=1;
+let b1=1;
+  for (let i = 0; i < a.length; i++){
+  a1*=a[i]
+  }
+  for (let i = 0; i < b.length; i++){
+  b1*=b[i]
+  }
+  return Math.abs(b1-a1)
+}
+```
+#### Total amount of points
+```javascript
+function points(games) {
+let sum = 0;
+  for (let i=0; i<games.length; i++){
+     if (games[i][0] > games[i][2]) sum+=3
+     else if (games[i][2] > games[i][0]) sum+=0
+     else if (games[i][0] === games[i][2]) sum+=1
+  }
+  return sum
+}
+```
