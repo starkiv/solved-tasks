@@ -154,3 +154,72 @@ let sum = 0;
   return sum
 }
 ```
+#### How good are you really?
+```javascript
+function betterThanAverage(classPoints, yourPoints) {
+let sum = 0;  
+for (let i = 0; i < classPoints.length; i++){  
+  sum = sum + classPoints[i]; 
+}
+let p = sum/classPoints.length;
+if(p<=yourPoints) return true
+if(p>yourPoints) return false
+}
+```
+#### Calculate average
+```javascript
+function find_average(a) {
+let a1=0;
+let b=0;
+  for (let i = 0; i < a.length; i++){
+  a1++
+  b+=a[i]
+  }
+  return Math.abs(b/a1)
+}
+```
+#### Count of positives / sum of negatives
+```javascript
+function countPositivesSumNegatives(input) {
+let c = 0;
+let sum = 0;
+let arr = [];
+if (!input || !input.length) return []
+for (let i=0; i<input.length; i++){
+        if (input[i]>0) sum++
+        if (input[i]<0) c+=input[i]
+    }
+arr.push(sum)
+arr.push(c) 
+return arr
+
+}
+```
+#### Sum of Odd Cubed Numbers
+```javascript
+function cubeOdd(arr) {
+let v = [];
+let sum = 0;
+for (let i=0; i<arr.length; i++){
+    if (arr[i] === Math.trunc(arr[i])) v.push(arr[i]**3)
+    else if (typeof(arr[i]) === 'string') return undefined
+}
+for (let i=0; i<v.length; i++){
+    if ((v[i]%2===1)||(v[i]%2===-1)) sum+=v[i]
+}
+return sum
+}
+```
+#### Remove the minimum
+```javascript
+function removeSmallest(n) {
+let arr=[];
+let e=Math.min(...n);
+let r=n.indexOf(e)
+    for (let i=0; i<n.length; i++){
+        if (i !== r) arr.push(n[i])
+    }
+return arr
+
+}
+```
