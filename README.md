@@ -223,3 +223,26 @@ return arr
 
 }
 ```
+#### Find Maximum and Minimum Values of a List
+```javascript
+var min = function(list){
+    
+    return Math.min(...list);
+}
+
+var max = function(list){
+    
+    return Math.max(...list);
+}
+```
+#### Sum without highest and lowest number
+```javascript
+function sumArray(array) {
+let sum = 0;
+if (!array || array.length<2) return 0
+for (let i=0; i<array.length; i++){
+  sum+=array[i]
+}
+return sum - Math.min(...array) - Math.max(...array)
+}
+```
