@@ -246,3 +246,69 @@ for (let i=0; i<array.length; i++){
 return sum - Math.min(...array) - Math.max(...array)
 }
 ```
+#### Find the divisors!
+```javascript
+function divisors(integer) {
+let arr = [];
+
+  for (let i=2; i<integer; i++){
+    if (integer%i === 0)
+      arr.push(i)
+  }
+  if (arr.length === 0) return `${integer} is prime`
+  else return arr
+};
+```
+#### Count by X
+```javascript
+function countBy(x, n) {
+  let z = [];
+for (let i=1; i<=n*x; i++){
+    if (i%x === 0) z.push(i)
+}
+  return z;
+}
+```
+#### Unfinished Loop - Bug Fixing #1
+```javascript
+function createArray(number){
+  let newArray = [];
+  
+  for(let counter = 1; counter <= number; counter++){
+    newArray.push(counter);
+  }
+  
+  return newArray;
+}
+```
+#### Reversed sequence
+```javascript
+const reverseSeq = n => {
+let arr = [];
+for (let i=n; i>0; i--){
+    arr.push(i)
+}
+  return arr;
+};
+```
+#### Training JS #4: Basic data types--Array
+```javascript
+function getLength(arr){
+  return arr.length
+}
+function getFirst(arr){
+  return arr[0]
+}
+function getLast(arr){
+  return arr[arr.length-1]
+}
+function pushElement(arr){
+  var el=1;
+  arr.push(el)
+  return arr
+}
+function popElement(arr){
+  arr.pop() 
+  return arr
+}
+```
