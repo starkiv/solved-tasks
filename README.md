@@ -312,3 +312,15 @@ function popElement(arr){
   return arr
 }
 ```
+#### You only need one - Beginner
+```javascript
+function check(a, x) {
+  return a.includes(x)
+}
+```
+#### Be Concise IV - Index of an element in an array
+```javascript
+function find(a,e){
+if(a.indexOf(e)==-1) return "Not found"
+else return a.indexOf(e)}
+```
