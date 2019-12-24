@@ -324,3 +324,41 @@ function find(a,e){
 if(a.indexOf(e)==-1) return "Not found"
 else return a.indexOf(e)}
 ```
+#### JavaScript Array Filter
+```javascript
+function getEvenNumbers(nA){
+ function nArr (Even){
+    if (Even%2 === 0) return Even
+ }
+
+const arr = nA.filter(nArr)
+return arr
+}
+```
+#### Array.diff
+```javascript
+function array_diff(a, b) {
+  let arr = [];
+    for (let i=0; i<a.length; i++){
+      if (!b.includes(a[i])) arr.push(a[i])
+    }
+  return arr  
+}
+```
+#### Removing Elements
+```javascript
+function removeEveryOther(arr){
+ const rem = arr.filter((el, i) => i%2===0)
+ return rem
+}
+```
+#### filterEvenLengthWords
+```javascript
+function filterEvenLengthWords(words) {
+function getWord(word) {
+  if (word.length % 2 === 0) return word;
+}
+const arr2 = words.filter(getWord);
+return arr2
+}
+```
