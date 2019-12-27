@@ -362,3 +362,18 @@ const arr2 = words.filter(getWord);
 return arr2
 }
 ```
+#### Find Duplicates
+```javascript
+function duplicates(arr) {
+  const arr2 = arr.filter ((el, i) => i !== arr.indexOf(el) && i == arr.lastIndexOf(el));
+  return arr2
+}
+```
+#### Train to remove duplicates from an array with filter()
+```javascript
+function unique(arr) {
+const v = arr.filter ((el, i) => i === arr.indexOf(el))
+return v
+
+}
+```
