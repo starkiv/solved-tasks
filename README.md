@@ -377,3 +377,20 @@ return v
 
 }
 ```
+#### Jenny's secret message
+```javascript
+function greet(name){
+  if(name !== "Johnny") return "Hello, " + name + "!"
+   else return "Hello, my love!";
+}
+```
+#### If you can't sleep, just count sheep!!
+```javascript
+var countSheep = function (num){
+let a = '';
+  for (let i=1; i<=num; i++){
+    a += `${i} sheep...`
+  }
+  return a
+}
+```
