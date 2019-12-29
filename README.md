@@ -394,3 +394,30 @@ let a = '';
   return a
 }
 ```
+#### Numbers to Letters
+```javascript
+function switcher(x){
+let arr2 = [];
+let arr = ['z','y','x','w','v','u','t','s','r','q','p','o','n','m','l','k','j','i','h','g','f','e','d','c','b','a','!','?',' '];
+for (let i=0; i<x.length; i++){
+   for (let j=0; j<arr.length; j++){
+     if (x[i]==j+1) arr2.push(arr[j])
+   }
+}
+return arr2.join('')
+}
+```
+#### Unique In Order
+```javascript
+var uniqueInOrder=function(it){
+let arr = [];
+let arr2 = [];
+  for (let i=0; i<it.length; i++){
+    arr.push(it[i])
+  }
+  for  (let i=0; i<arr.length; i++){
+    if (arr[i]!==arr[i-1]) arr2.push(arr[i])
+  }
+return arr2  
+}
+```
