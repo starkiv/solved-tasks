@@ -421,3 +421,33 @@ let arr2 = [];
 return arr2  
 }
 ```
+#### Triple Trouble
+```javascript
+function tripleTrouble(one, two, three){
+let str='';
+  for (let i=0; i<one.length; i++){
+     str+=one[i]+two[i]+three[i]
+  }
+  return str
+ }
+```
+#### Spacify
+```javascript
+function spacify(str) {
+let str2='';
+  for (let i=0; i<str.length-1; i++){
+     str2+=str[i]+' ';
+  } 
+  return str2+str[str.length-1]
+}
+```
+#### Find the capitals
+```javascript
+var capitals = function (w) {
+let arr = [];
+	for (let i=0; i<w.length; i++){
+    if (w[i].toUpperCase() === w[i]) arr.push(i)
+  }
+  return arr
+};
+```
