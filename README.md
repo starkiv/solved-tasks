@@ -451,3 +451,22 @@ let arr = [];
   return arr
 };
 ```
+#### repeatIt
+```javascript
+var repeatIt = function(str, n) {
+  if (typeof str === 'string'){ return str.repeat(n)
+  }else {
+    return 'Not a string'}
+  }
+```
+#### Don't give me five!
+```javascript
+function dontGiveMeFive(start, end){
+  let arr = [];
+  for(let i = start; i <= end; i++){
+    let j = i+'';
+    if (j.includes('5') === false) arr.push(i)
+  }
+  return arr.length
+}
+```
