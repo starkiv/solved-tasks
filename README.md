@@ -470,3 +470,25 @@ function dontGiveMeFive(start, end){
   return arr.length
 }
 ```
+#### Credit Card Mask
+```javascript
+function maskify(cc) {
+let a = '#';
+let b = '';
+if(cc.length > 4) b += a.repeat(cc.length-4)
+else b = '';
+return b + cc.slice(-4)
+}
+```
+#### Tail Swap
+```javascript
+function tailSwap(arr) {
+  let arr2 = [];
+  for(let i = 0; i < arr.length; i++){
+    arr2.push(arr[i].slice(0, arr[i].indexOf(':')+1))
+  }
+  arr2[0] += arr[1].slice(arr[1].indexOf(':')+1)
+  arr2[1] += arr[0].slice(arr[0].indexOf(':')+1)
+  return arr2
+}
+```
