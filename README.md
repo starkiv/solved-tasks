@@ -492,3 +492,49 @@ function tailSwap(arr) {
   return arr2
 }
 ```
+#### Duck Duck Goose
+```javascript
+function duckDuckGoose(p, g) {
+let str = '';
+  for(let i = 0; i <= g; i++){
+     if(i+1 === g) str += p[i].name
+     if(i+1 >= p.length){
+     g-=p.length;
+     i=0
+     }
+  }
+//   console.log(str)
+   return str
+ 
+  
+  
+}
+```
+#### Welcome!
+```javascript
+function greet(language) {
+	 let hi = {
+     english: 'Welcome',
+     czech: 'Vitejte',
+     danish: 'Velkomst',
+     dutch: 'Welkom',
+     estonian: 'Tere tulemast',
+     finnish: 'Tervetuloa',
+     flemish: 'Welgekomen',
+     french: 'Bienvenue',
+     german: 'Willkommen',
+     irish: 'Failte',
+     italian: 'Benvenuto',
+     latvian: 'Gaidits',
+     lithuanian: 'Laukiamas',
+     polish: 'Witamy',
+     spanish: 'Bienvenido',
+     swedish: 'Valkommen',
+     welsh: 'Croeso',
+     IP_ADDRESS_INVALID: 'Welcome',
+     IP_ADDRESS_NOT_FOUND: 'Welcome', 
+     IP_ADDRESS_REQUIRED: 'Welcome',
+   }
+   return hi[language]
+}
+```
