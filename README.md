@@ -547,3 +547,27 @@ function arithmetic(a, b, operator){
   if (operator === 'divide') return a / b
 }
 ```
+#### Numbers to Objects
+```javascript
+function numObj(s){
+  const arr = [];
+  s.map(v => arr.push(String.fromCharCode(v)))
+  const obj = Array.from({length:s.length}, x => x = {});
+  obj.map((v, i) => v[s[i]] = arr[i])
+  return obj
+}
+```
+#### Coding Meetup #5 - Higher-Order Functions Series - Prepare the count of languages
+```javascript
+function countLanguages(list) {
+let counter = list.reduce(function (o, i) {
+  if (!o.hasOwnProperty(i.language)) {
+    o[i.language] = 0;
+  }
+  o[i.language]++;
+  return o;
+}, {});
+
+return counter
+}
+```
