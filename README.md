@@ -571,3 +571,34 @@ let counter = list.reduce(function (o, i) {
 return counter
 }
 ```
+#### Most valuable character
+```javascript
+function solve(st) {
+   let max = 0, result = [], div;
+   for (let k of st){
+      div = st.lastIndexOf(k) - st.indexOf(k);
+      if (max < div) max = div;
+   }
+   for (let k of st){
+      div = st.lastIndexOf(k) - st.indexOf(k);
+      if (max === div) result.push(k);
+   }
+   return result.sort()[0]
+}
+```
+#### Permute a Palindrome
+```javascript
+function permuteAPalindrome (input) { 
+ let count = 0;
+  const dict = input.split('').reduce((acc, curr) => ((acc[curr] = acc[curr] ? acc[curr] + 1 : 1), acc),
+    {}
+  );
+  for (let i in dict) {
+    if (dict[i] % 2 !== 0) {
+      count++;
+    }
+    if (count === 2) return false;
+  }
+  return true;
+}
+```
