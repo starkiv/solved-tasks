@@ -602,3 +602,42 @@ function permuteAPalindrome (input) {
   return true;
 }
 ```
+#### How many days are we represented in a foreign country?
+```javascript
+function daysRepresented(trips){
+   let hours = {};
+   for (let i = 0; i < trips.length; i++){
+      for (let j = trips[i][0]; j <= trips[i][1]; j++){
+         hours[j] = 1;
+      }
+   }
+   let result = 0;
+   for (key in hours){
+   result += hours[key]
+   }
+   return result
+}
+```
+#### The Office II - Boredom Score
+```javascript
+function boredom(staff){
+  let arr = Object.entries(staff);
+  let nArr = [];
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i][1] === 'accounts') nArr.push(1)
+    if (arr[i][1] === 'finance') nArr.push(2)
+    if (arr[i][1] === 'canteen') nArr.push(10)
+    if (arr[i][1] === 'regulation') nArr.push(3)
+    if (arr[i][1] === 'trading') nArr.push(6)
+    if (arr[i][1] === 'change') nArr.push(6)
+    if (arr[i][1] === 'IS') nArr.push(8)
+    if (arr[i][1] === 'retail') nArr.push(5)
+    if (arr[i][1] === 'cleaning') nArr.push(4)
+    if (arr[i][1] === 'pissing about') nArr.push(25)
+    }
+  const result = nArr.reduce((k, v) => k + v, 0)
+  if (result <= 80) return 'kill me now'
+  if ((result > 80) && (result < 100)) return 'i can handle this'
+  else return  'party time!!'
+}
+```
