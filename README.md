@@ -641,3 +641,19 @@ function boredom(staff){
   else return  'party time!!'
 }
 ```
+#### Miles per gallon to kilometers per liter
+```javascript
+function converter (mpg) {
+  let a = mpg / 4.54609188;
+  let b = a * 1.609344;
+  return +b.toFixed(2)
+}
+```
+#### Find the Slope
+```javascript
+function slope(points){
+   let result = (points[3] - points[1])/(points[2] - points[0])
+   if ((points[2] - points[0]) === 0) return 'undefined' 
+   else return result.toFixed()
+}
+```
