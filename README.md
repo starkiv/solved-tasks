@@ -657,3 +657,35 @@ function slope(points){
    else return result.toFixed()
 }
 ```
+#### simple calculator
+```javascript
+function calculator(a,b,sign){
+   if (typeof a !== 'number' || typeof b !== 'number') return 'unknown value'
+   else
+   switch (sign) {
+     case '+':  
+     return a + b
+     break
+     case '*':
+     return a * b
+     break
+     case '/':
+     return a / b
+     break
+     case '-':
+     return a - b
+     break
+     default: 
+     return 'unknown value' 
+   }
+
+}
+```
+#### Training JS #7: if..else and ternary operator
+```javascript
+function saleHotdogs(n){
+  if (n < 5) return n * 100
+  if (n >= 5 && n < 10) return n * 95
+  else return n * 90
+}
+```
