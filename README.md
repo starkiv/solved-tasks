@@ -722,3 +722,15 @@ function getPlanetName(id){
   return name;
 }
 ```
+#### Ghost code?!
+```javascript
+public class GhostCode{
+  public static String helloName(final String name){
+  
+    if(name == null || name == (""))
+      return "Hello world!";
+    else
+      return "Hello my name is " + name;
+  }
+}
+```
