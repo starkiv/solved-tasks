@@ -734,3 +734,29 @@ public class GhostCode{
   }
 }
 ```
+#### Pokemon Damage Calculator
+```javascript
+function calculateDamage(yourType, opponentType, attack, defense){
+
+  if ((yourType === 'fire' && opponentType === 'water') || (yourType === 'grass' && opponentType === 'fire') || (yourType === 'water' && opponentType === 'grass') || (yourType === 'water' && opponentType === 'electric') || (yourType === 'water' && opponentType === 'water') || (yourType === 'electric' && opponentType === 'electric') || (yourType === 'grass' && opponentType === 'grass') || (yourType === 'fire' && opponentType === 'fire')) return Math.ceil(50*(attack/defense)*0.5)
+  if ((yourType === 'fire' && opponentType === 'electric') || (yourType === 'grass' && opponentType === 'electric') || (yourType === 'electric' && opponentType === 'fire') || (yourType === 'electric' && opponentType === 'grass')) return Math.ceil(50*(attack/defense)*1)
+  if ((yourType === 'fire' && opponentType === 'grass') || (yourType === 'water' && opponentType === 'fire') || (yourType === 'grass' && opponentType === 'water') || (yourType === 'electric' && opponentType === 'water')) return Math.ceil(50*(attack/defense)*2)
+  
+
+}
+```
+#### Binary to Text (ASCII) Conversion
+```javascript
+function binaryToString(binary) {
+ let n = binary.toString();
+ let q = n.replace(/(\d{1,8}(?=(?:\d\d\d\d\d\d\d\d)+(?!\d)))/g, "$1" + ' ');
+ let binString = '';
+
+ q.split(' ').map(function(bin) {
+    binString += String.fromCharCode(parseInt(bin, 2));
+  });
+  if (binary === '') return ''
+  else return binString;
+
+}
+```
