@@ -779,3 +779,28 @@ public class Kata {
   }
 }
 ```
+#### Decipher this!
+```javascript
+function decipherThis(str) {
+    let newArr = str.split(' ');
+    let arr = [];
+    for (let i = 0; i < newArr.length; i++){
+        let num = newArr[i].replace(/\D/g, '');
+        let st = String.fromCharCode(num);
+        let code = newArr[i].replace(/\d/g, '');
+        arr.push(st + code)
+    }
+    let f = [];
+    for (let i = 0; i < arr.length; i++){
+        let string = '';
+        if (arr[i].length > 2){
+        string += arr[i][0];
+        string += arr[i][arr[i].length - 1];
+        string += arr[i].slice(2, arr[i].length - 1)
+        string += arr[i][1];
+        f.push(string);
+        } else f.push(arr[i])
+    }
+    return f.join(' ')
+}; 
+```
