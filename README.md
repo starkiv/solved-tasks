@@ -804,3 +804,14 @@ function decipherThis(str) {
     return f.join(' ')
 }; 
 ```
+#### Row of the odd triangle
+```javascript
+function oddRow(n) {
+  let num = n ** 2 - (n - 1);
+  let arr = [];
+  for (let i = 0; i < n; i++){
+    arr.push(num + 2 * i)
+  } 
+  return arr
+}
+```
