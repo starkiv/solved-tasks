@@ -722,18 +722,6 @@ function getPlanetName(id){
   return name;
 }
 ```
-#### Ghost code?!
-```javascript
-public class GhostCode{
-  public static String helloName(final String name){
-  
-    if(name == null || name == (""))
-      return "Hello world!";
-    else
-      return "Hello my name is " + name;
-  }
-}
-```
 #### Pokemon Damage Calculator
 ```javascript
 function calculateDamage(yourType, opponentType, attack, defense){
@@ -758,25 +746,6 @@ function binaryToString(binary) {
   if (binary === '') return ''
   else return binString;
 
-}
-```
-#### Two fighters, one winner.
-```javascript
-public class Kata {
-  public static String declareWinner(Fighter fighter1, Fighter fighter2, String firstAttacker) {
-    while (fighter1.health > 0 && fighter2.health > 0){
-         fighter1.health -= fighter2.damagePerAttack;
-         fighter2.health -= fighter1.damagePerAttack;
-    }
-    if (fighter1.health <= 0 && fighter2.health <= 0){
-        return firstAttacker;
-    } else if (fighter1.health > fighter2.health){
-        return fighter1.name;
-    } else {
-        return fighter2.name;
-    }
-    
-  }
 }
 ```
 #### Decipher this!
@@ -813,5 +782,28 @@ function oddRow(n) {
     arr.push(num + 2 * i)
   } 
   return arr
+}
+```
+#### Pre-FizzBuzz Workout #1
+```javascript
+function preFizz(n) {
+    let arr = [];
+    for (let i = 1; i <= n; i++){
+        arr.push(i)
+    }
+    return arr
+}
+```
+#### Training JS #10: loop statement --for
+```javascript
+function pickIt(arr){
+  var odd=[],even=[];
+  for (let i = 0; i < arr.length; i++){
+      if (arr[i] % 2 === 1) odd.push(arr[i])
+      else even.push(arr[i])
+  }
+  
+  
+  return [odd,even];
 }
 ```
