@@ -807,3 +807,25 @@ function pickIt(arr){
   return [odd,even];
 }
 ```
+#### No zeros for heros
+```javascript
+function noBoringZeros(n) {
+  if (n === 0) return 0
+  while (n % 10 === 0){
+    n = n / 10;
+  }
+  return n
+}
+```
+#### Beginner Series #3 Sum of Numbers
+```javascript
+function getSum(a, b){
+    let max = Math.max (a, b);
+    let min = Math.min (a, b);
+    let sum = 0;
+    for (let i = min; i <= max; i++){
+        sum += i
+    }
+    return sum
+}
+```
