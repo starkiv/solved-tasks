@@ -829,3 +829,38 @@ function getSum(a, b){
     return sum
 }
 ```
+#### What will be the odd one out?
+```javascript
+function oddOneOut(str) {
+    let obj = {};
+    let out = [];
+    for (let i = 0; i < str.length; i++){
+        if (!obj[str[i]]) obj[str[i]] = 1;
+        else delete obj[str[i]];    
+}
+    for (let i = 0; i < str.length; i++){
+        if (obj[str[i]] && str.lastIndexOf(str[i]) === i)
+        out.push(str[i]) 
+           
+}
+    return out
+}
+```
+#### Are they the "same"?
+```javascript
+function comp(array1, array2){
+ if (array1 === null || array2 === null) return false
+  let arr1 = [...array1];
+  let arr2 = [...array2];
+  arr1.forEach((num, index) => {
+      const matchIndex = arr2.findIndex((num2) => num2 === Math.pow(num, 2))
+      if (matchIndex !== -1){
+        arr1 = arr1.filter((el, i) => i !== index) 
+        arr2 = arr2.filter((el2, i2) => i2 !== matchIndex)
+      }
+  })
+
+  if (arr2.length === 0) return true
+  else return false
+}
+```
