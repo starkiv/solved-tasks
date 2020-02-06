@@ -864,3 +864,16 @@ function comp(array1, array2){
   else return false
 }
 ```
+#### Power
+```javascript
+function numberToPower(number, power){
+  if (power === 0) return 1
+  let i = 1;
+  let j = 0;
+  do {
+      j++
+      i *= number
+  } while (j < power)
+  return i
+}
+```
