@@ -877,3 +877,21 @@ function numberToPower(number, power){
   return i
 }
 ```
+#### Beginner Series #3 Sum of Numbers 2
+```javascript
+function getSum(a, b){ 
+    let max, min; 
+    if (a > b) { 
+      max = a   
+      min = b 
+    } else { 
+      max = b 
+      min = a 
+    }  
+    let sum = 0; 
+    for (let i = min; i <= max; i++){
+      sum += i 
+    } 
+    return sum 
+}
+```
