@@ -907,3 +907,15 @@ function getSum(a, b){
     return sum
 }
 ```
+#### Tortoise racing
+```javascript
+function race(v1, v2, g) {
+    if (v1 >= v2) return null
+    let arr = [];
+    let hours = Math.trunc(g / (v2-v1));
+    let min = Math.trunc(((g / (v2-v1)) * 60) % 60);
+    let sec = Math.trunc(((g / (v2-v1)) * 3600) % 60);
+    arr.push(hours, min, sec);
+    return arr
+}
+```
