@@ -919,3 +919,11 @@ function race(v1, v2, g) {
     return arr
 }
 ```
+#### Price of Mangoes
+```javascript
+function mango(q, p){
+    let x = q / 3;
+    let y = (Math.floor(x) * 2) * p
+    return y + (q % 3) * p
+}
+```
