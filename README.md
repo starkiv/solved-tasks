@@ -927,3 +927,19 @@ function mango(q, p){
     return y + (q % 3) * p
 }
 ```
+#### Valid Parentheses
+```javascript
+function validParentheses(parens){
+  let count = [0, 0];
+  for (let el of parens){
+    switch (el){
+      case '(': count[0]++
+      break;
+      case ')': count[1]++
+      break;
+    }
+    if (count[1] > count[0]) return false 
+  }
+  return count[0] === count[1]
+}
+```
