@@ -943,3 +943,28 @@ function validParentheses(parens){
   return count[0] === count[1]
 }
 ```
+#### Vasya - Clerk
+```javascript
+function tickets(peopleInLine){
+  let money25 = 0;
+  let money50 = 0;
+  let money100 = 0;
+  for (let i = 0; i < peopleInLine.length; i++){
+    if (peopleInLine[i] === 25) money25++
+    else if (peopleInLine[i] === 50 && money25 > 0){ 
+        money50++
+        money25--
+        }
+    else if (peopleInLine[i] === 100 && money25 > 0 && money50 > 0){ 
+        money100++
+        money50--
+        money25--
+        }
+    else if (peopleInLine[i] === 100 && money25 > 2){
+        money100++
+        money25-=3
+        } else return 'NO'
+  }
+  return 'YES'
+}
+```
