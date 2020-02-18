@@ -968,3 +968,11 @@ function tickets(peopleInLine){
   return 'YES'
 }
 ```
+#### All Star Code Challenge #22
+```javascript
+function toTime(s) {
+    let hours = Math.floor(s/3600);
+    let min = Math.floor((s - hours * 3600)/60);
+    return `${hours} hour(s) and ${min > 59 ? 0 : min} minute(s)`
+}
+```
