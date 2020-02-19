@@ -976,3 +976,13 @@ function toTime(s) {
     return `${hours} hour(s) and ${min > 59 ? 0 : min} minute(s)`
 }
 ```
+#### Drying Potatoes
+```javascript
+function potatoes(p0, w0, p1) {
+    let weightWater = (w0 * p0) / 100;
+    let weightDryMatter = w0 - weightWater;
+    let newPercentDryMatter = 100 - p1;
+    let totalWeight = Math.round(weightDryMatter * 100) / newPercentDryMatter;
+    return Math.trunc(totalWeight)
+}
+```
