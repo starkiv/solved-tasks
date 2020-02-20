@@ -986,3 +986,23 @@ function potatoes(p0, w0, p1) {
     return Math.trunc(totalWeight)
 }
 ```
+#### Format data value
+```javascript
+function formatDataValue(data) {
+   if (data < 1000) return `${data}MB`;
+
+   if ((data > 999) && (data < 1000000)){
+      let str = data.toString()
+      if (str.substring(str.length - 3, str.length) === '000') return `${+str.substring(0, str.length - 3)}GB`
+      else return `${+str.substring(0, str.length - 3)}GB ${+str.substring(str.length - 3, str.length)}MB` 
+}
+  
+  if ((data > 999999) && (data < 1000000000)){
+      let str = data.toString()
+
+      if (str.substring(str.length - 6, str.length) === '000000') return `${+str.substring(0, str.length - 6)}TB`
+      if (str.substring(str.length - 6, str.length) === `${str.substring(str.length - 6, str.length - 3)}000`) return `${+str.substring(0, str.length - 6)}TB ${+str.substring(str.length - 6, str.length - 3)}GB`
+      else return `${+str.substring(0, str.length - 6)}TB ${+str.substring(str.length - 6, str.length - 3)}GB ${+str.substring(str.length - 3, str.length)}MB` 
+  }
+}
+```
