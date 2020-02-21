@@ -1006,3 +1006,11 @@ function formatDataValue(data) {
   }
 }
 ```
+#### What time is it?
+```javascript
+let getMilitaryTime = function(input) {
+  if ((input.substring(0, input.length - 8) === '12') && (input.substring(input.length - 2, input.length) === 'AM')) return `00:${input.substring(input.length - 7, input.length - 2)}`
+  if ((+input.substring(0, input.length - 8) < 12) && (input.substring(input.length - 2, input.length) === 'PM')) return `${+input.substring(0, input.length - 8) + 12}:${input.substring(input.length - 7, input.length - 2)}`
+  else return `${input.substring(0, input.length - 2)}`
+};
+```
