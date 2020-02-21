@@ -1024,3 +1024,27 @@ function uniqueNumbers(numbersArray) {
     return newArr
 }
 ```
+#### Mispelled word
+```javascript
+function mispelled (word1, word2){
+     let count = 0;
+     if (word1.length === word2.length){
+     for (let i = 0; i < word2.length; i++){
+         if (word1.includes(word2[i]) === false) count++
+     }
+     } 
+     if (word1.length > word2.length) { 
+         for (let i = 0; i < word1.length; i++){
+         if (word2.includes(word1[i]) === false) count++
+     }
+     }
+     if (word1.length < word2.length) { 
+         for (let i = 0; i < word2.length; i++){
+         if (word1.includes(word2[i]) === false) count++
+     }
+     }
+     if ((word1.length - word2.length > 1) || (word2.length - word1.length > 1)) return false
+     if (count <= 1) return true
+     else return false
+}
+```
