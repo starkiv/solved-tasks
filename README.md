@@ -1048,3 +1048,22 @@ function mispelled (word1, word2){
      else return false
 }
 ```
+#### I'm already Tracer
+```javascript
+function teamComp(heroes) {
+  let tank = 0;
+  let damage = 0;
+  let support = 0;
+  for (let i = 0; i < heroes.length; i++){
+      if ((heroes[i] === 'D.Va') || (heroes[i] === 'Orisa') || (heroes[i] === 'Reinhardt') || (heroes[i] === 'Roadhog') || (heroes[i] === 'Sigma') || (heroes[i] === 'Winston') || (heroes[i] === 'Wrecking Ball') || (heroes[i] === 'Zarya')) tank++;
+      if ((heroes[i] === 'Ashe') || (heroes[i] === 'Bastion') || (heroes[i] === 'Doomfist') || (heroes[i] === 'Genji') || (heroes[i] === 'Hanzo') || (heroes[i] === 'Junkrat') || (heroes[i] === 'McCree') || (heroes[i] === 'Mei') || (heroes[i] === 'Pharah') || (heroes[i] === 'Reaper') || (heroes[i] === 'Soldier: 76') || (heroes[i] === 'Sombra') || (heroes[i] === 'Symmetra') || (heroes[i] === 'Torbjörn') || (heroes[i] === 'Tracer') || (heroes[i] === 'Widowmaker')) damage++;
+      if ((heroes[i] === 'Ana') || (heroes[i] === 'Baptiste') || (heroes[i] === 'Brigitte') || (heroes[i] === 'Lúcio') || (heroes[i] === 'Mercy') || (heroes[i] === 'Moira') || (heroes[i] === 'Zenyatta')) support++
+  }
+  const exstraHeroes = heroes.filter((el, i) => i !== heroes.indexOf(el) && i === heroes.lastIndexOf(el));
+  if (exstraHeroes.length > 0) return 'GG'
+  const arr = [tank, damage, support];
+  if ((tank + damage + support) > 6 || (tank + damage + support) < 6) return 'GG'
+  if ((tank === 0) && (damage === 0) && (support === 0)) return 'GG'
+  return arr
+}
+```
