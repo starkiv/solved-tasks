@@ -1067,3 +1067,14 @@ function teamComp(heroes) {
   return arr
 }
 ```
+#### Expressions Matter
+```javascript
+function expressionMatter(a, b, c) {
+  let x = a * (b + c);
+  let y = a * b * c;
+  let z = a + b * c;
+  let w = (a + b) * c;
+  let u = a + b + c;
+  return Math.max(x, y, z, w, u)
+}
+```
