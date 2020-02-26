@@ -1078,3 +1078,12 @@ function expressionMatter(a, b, c) {
   return Math.max(x, y, z, w, u)
 }
 ```
+#### Binary Addition
+```javascript
+function addBinary(a,b) {
+    
+    let x = a + b;
+    let y = parseInt(x).toString(2);
+    return y
+}
+```
