@@ -1087,3 +1087,9 @@ function addBinary(a,b) {
     return y
 }
 ```
+Grasshopper - Messi goals function
+```javascript
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
+```
