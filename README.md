@@ -1087,9 +1087,22 @@ function addBinary(a,b) {
     return y
 }
 ```
-Grasshopper - Messi goals function
+#### Grasshopper - Messi goals function
 ```javascript
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals
+}
+```
+#### Power
+```javascript
+function numberToPower(number, power){
+  if (power === 0) return 1
+  let i = 1;
+  let j = 0;
+  do {
+      j++
+      i *= number
+  } while (j < power)
+  return i
 }
 ```
