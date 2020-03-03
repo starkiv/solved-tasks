@@ -1118,3 +1118,10 @@ function getSum(a, b){
     return sum
 }
 ```
+#### No zeros for heros
+```javascript
+function noBoringZeros(n) {
+    let str = n + '';
+    return +str.replace(/0+$/, '')
+}
+```
