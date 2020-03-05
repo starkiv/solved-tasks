@@ -1138,3 +1138,11 @@ function pickIt(arr){
   return [odd,even];
 }
 ```
+#### Thinkful - Number Drills: Blue and red marbles
+```javascript
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+  let sumBlue = blueStart - bluePulled;
+  let sumRed = redStart - redPulled;
+  return sumBlue / (sumBlue + sumRed)
+}
+```
