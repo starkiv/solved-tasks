@@ -1146,3 +1146,13 @@ function guessBlue(blueStart, redStart, bluePulled, redPulled) {
   return sumBlue / (sumBlue + sumRed)
 }
 ```
+#### Highest and Lowest
+```javascript
+function highAndLow(numbers){
+  let arr = numbers.split(' ');
+  arr.sort((a, b) => b - a);
+  let str = '';
+  str += arr[0] + ' ' + arr[arr.length - 1];
+  return str
+}
+```
