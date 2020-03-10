@@ -1156,3 +1156,12 @@ function highAndLow(numbers){
   return str
 }
 ```
+#### Is every value in the array an array?
+```javascript
+function arrCheck(v){
+for (let i = 0; i < v.length; i++){
+  if (!Array.isArray(v[i])) return false
+}
+return true
+}
+```
