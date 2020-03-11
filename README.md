@@ -1165,3 +1165,16 @@ for (let i = 0; i < v.length; i++){
 return true
 }
 ```
+#### Squares sequence
+```javascript
+function squares(x, n) {
+let s = 1;
+let arr = [];
+for (let i=0; i<n-1; i++){
+s*=2
+arr.push(Math.pow(x,s))
+}
+if (n>0) arr.unshift(x)
+return arr
+}
+```
