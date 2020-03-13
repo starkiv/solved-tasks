@@ -1187,3 +1187,12 @@ function peopleWithAgeDrink(old) {
    else if (old > 20) return "drink whisky"
 };
 ```
+#### What's wrong with these identifiers?
+```javascript
+var Person = {
+  stname: "John",
+  secondName: "Doe",
+  emailAddress: "john.doe@email.com",
+  maleFemale: "M"
+};
+```
