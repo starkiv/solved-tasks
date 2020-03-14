@@ -1196,3 +1196,11 @@ var Person = {
   maleFemale: "M"
 };
 ```
+#### N-th Power
+```javascript
+function index(array, n){
+  if ((array.length <= n)||(array[n] === -1)) return -1
+  else
+  return Math.pow(array[n], n)
+}
+```
