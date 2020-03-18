@@ -1212,3 +1212,11 @@ function uefaEuro2016(t, s){
   if (s[0] === s[1]) return `At match ${t[0]} - ${t[1]}, teams played draw.`
 }
 ```
+#### Training JS #29: methods of arrayObject---concat() and join()
+```javascript
+function bigToSmall(arr){
+  const newArr = arr.reduce((t, el) => t.concat(el), []);
+  newArr.sort((a, b) => b - a);
+  return newArr.join('>')
+}
+```
