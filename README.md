@@ -1220,3 +1220,9 @@ function bigToSmall(arr){
   return newArr.join('>')
 }
 ```
+#### Sort array by string length
+```javascript
+function sortByLength (array) {
+  return array.sort((a, b) => a.length - b.length)
+};
+```
