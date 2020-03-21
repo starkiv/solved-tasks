@@ -1226,3 +1226,16 @@ function sortByLength (array) {
   return array.sort((a, b) => a.length - b.length)
 };
 ```
+#### Row Weights
+```javascript
+function rowWeights(array){
+  const arr = [];
+  let count1 = 0, count2 = 0;
+  for (let i = 0; i < array.length; i++){
+    if (i % 2 === 0) count1 += array[i]
+    else count2 += array[i]
+  }
+    arr.push(count1, count2)
+  return arr
+}
+```
