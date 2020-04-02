@@ -1239,3 +1239,18 @@ function rowWeights(array){
   return arr
 }
 ```
+#### Binary to Text (ASCII) Conversion
+```javascript
+function binaryToString(binary) {
+ let n = binary.toString();
+ let q = n.replace(/(\d{1,8}(?=(?:\d\d\d\d\d\d\d\d)+(?!\d)))/g, "$1" + ' ');
+ let binString = '';
+
+ q.split(' ').map(function(bin) {
+    binString += String.fromCharCode(parseInt(bin, 2));
+  });
+  if (binary === '') return ''
+  else return binString;
+
+}
+```
