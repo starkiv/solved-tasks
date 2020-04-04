@@ -1273,3 +1273,18 @@ const rooms = {
   }
 };
 ```
+#### Blood-Alcohol Content
+```javascript
+function bloodAlcoholContent(drinks, weight, sex, time){
+
+  const obj = {
+      drinks, 
+      weight, 
+      sex, 
+      time
+  };
+
+  if (obj.sex === 'male') return +((obj.drinks.abv * obj.drinks.ounces * 5.14 / obj.weight * 0.73) - 0.015 * obj.time).toFixed(4)
+  else return +((obj.drinks.abv * obj.drinks.ounces * 5.14 / obj.weight * 0.66) - 0.015 * obj.time).toFixed(4)
+}
+```
