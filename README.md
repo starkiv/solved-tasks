@@ -1300,3 +1300,18 @@ function giveMeFive(obj){
   return arr
 }
 ```
+#### Ironman Triathlon
+```javascript
+function iTri(s){
+  const triathlon = {};
+  
+  if (s > 0 && s < 2.5) triathlon['Swim'] = `${(140.6 - s).toFixed(2)} to go!`
+  if (s > 2.4 && s < 113) triathlon['Bike'] = `${(140.6 - s).toFixed(2)} to go!`
+  if (s > 112 && s < 130.6) triathlon['Run'] = `${(140.6 - s).toFixed(2)} to go!`
+  if (s >= 130.6 && s < 140.7) triathlon['Run'] = 'Nearly there!'
+  if (s >= 140.7) return 'You\'re done! Stop running!'
+  if (s === 0) return 'Starting Line... Good Luck!'
+  
+  return triathlon
+}
+```
