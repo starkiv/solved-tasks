@@ -1315,3 +1315,14 @@ function iTri(s){
   return triathlon
 }
 ```
+#### TV channels
+```javascript
+function redarr(arr) {
+  const obj = {};
+  const newArr = Array.from(new Set(arr)).sort().map((el, i) => {
+      obj[i] = el
+  });
+  
+return obj
+}
+```
