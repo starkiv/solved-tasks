@@ -1288,3 +1288,15 @@ function bloodAlcoholContent(drinks, weight, sex, time){
   else return +((obj.drinks.abv * obj.drinks.ounces * 5.14 / obj.weight * 0.66) - 0.015 * obj.time).toFixed(4)
 }
 ```
+#### Training JS #12: loop statement --for..in and for..of
+```javascript
+function giveMeFive(obj){
+  const arr = [];
+  for (let key in obj){
+      if (key.length === 5) arr.push(key)
+      if (obj[key].length === 5) arr.push(obj[key])
+      
+  }
+  return arr
+}
+```
