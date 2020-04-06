@@ -1326,3 +1326,13 @@ function redarr(arr) {
 return obj
 }
 ```
+#### Freudian translator
+```javascript
+function toFreud(string) {
+const arr = string.split(' ')
+      .map((el) => el = 'sex')
+      .join(' ');
+if (string === '') return ''
+else return arr;
+}
+```
