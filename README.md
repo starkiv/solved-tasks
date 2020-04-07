@@ -1336,3 +1336,24 @@ if (string === '') return ''
 else return arr;
 }
 ```
+#### String Reordering
+```javascript
+function sentence(List) {
+  const obj = {};
+  for (let i = 0; i < List.length; i++){
+      +List[i]
+      Object.assign(obj, List[i])
+  }
+  let newArr = [];
+  let arr = Object.entries(obj);
+  for (let i = 0; i < arr.length; i++){
+    newArr.push([+arr[i][0], arr[i][1]])
+  }
+  newArr.sort((a, b) => a[0] - b[0]);
+  let str = ''
+  for (let i = 0; i < newArr.length; i++){
+    str += newArr[i][1] + ' '
+  }
+  return str.trimRight();
+}
+```
