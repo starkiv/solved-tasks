@@ -1365,3 +1365,13 @@ function sentence(List) {
              .join(' ')
 }
 ```
+#### Semi-Optional
+```javascript
+function wrap(value) {
+  const wrappedObj = {
+    value
+  };
+  
+  return wrappedObj
+}
+```
