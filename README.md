@@ -1397,3 +1397,12 @@ let sum = 0;
   return sum
 }
 ```
+#### Drink about
+```javascript
+function peopleWithAgeDrink(old) {
+   if (old < 14) return "drink toddy"
+   if (old < 18 && old > 13) return "drink coke"
+   if (old < 21 && old > 17) return "drink beer"
+   else if (old > 20) return "drink whisky"
+};
+```
