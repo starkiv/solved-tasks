@@ -1414,3 +1414,13 @@ let getMilitaryTime = function(input) {
   else return `${input.substring(0, input.length - 2)}`
 };
 ```
+#### Unique numbers
+```javascript
+function uniqueNumbers(numbersArray) {
+    let newArr = [];
+    for (let i = 0; i < numbersArray.length; i++){
+        if (!newArr.includes(numbersArray[i])) newArr.push(numbersArray[i])
+    }
+    return newArr
+}
+```
