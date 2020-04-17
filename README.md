@@ -1204,14 +1204,6 @@ function index(array, n){
   return Math.pow(array[n], n)
 }
 ```
-#### UEFA EURO 2016
-```javascript
-function uefaEuro2016(t, s){
-  if (s[0] > s[1]) return `At match ${t[0]} - ${t[1]}, ${t[0]} won!`
-  if (s[0] < s[1]) return `At match ${t[0]} - ${t[1]}, ${t[1]} won!`
-  if (s[0] === s[1]) return `At match ${t[0]} - ${t[1]}, teams played draw.`
-}
-```
 #### Training JS #29: methods of arrayObject---concat() and join()
 ```javascript
 function bigToSmall(arr){
