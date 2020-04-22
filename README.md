@@ -538,15 +538,6 @@ function greet(language) {
    return hi[language]
 }
 ```
-#### Make a function that does arithmetic!
-```javascript
-function arithmetic(a, b, operator){
-  if (operator === 'add') return a + b
-  if (operator === 'subtract') return a - b
-  if (operator === 'multiply') return a * b
-  if (operator === 'divide') return a / b
-}
-```
 #### Numbers to Objects
 ```javascript
 function numObj(s){
