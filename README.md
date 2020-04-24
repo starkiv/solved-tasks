@@ -166,18 +166,6 @@ if(p<=yourPoints) return true
 if(p>yourPoints) return false
 }
 ```
-#### Calculate average
-```javascript
-function find_average(a) {
-let a1=0;
-let b=0;
-  for (let i = 0; i < a.length; i++){
-  a1++
-  b+=a[i]
-  }
-  return Math.abs(b/a1)
-}
-```
 #### Count of positives / sum of negatives
 ```javascript
 function countPositivesSumNegatives(input) {
