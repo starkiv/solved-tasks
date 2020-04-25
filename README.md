@@ -116,18 +116,6 @@ for (let i = 0; i < arr.length; i++){
 return false
 }
 ```
-#### How good are you really?
-```javascript
-function betterThanAverage(classPoints, yourPoints) {
-let sum = 0;  
-for (let i = 0; i < classPoints.length; i++){  
-  sum = sum + classPoints[i]; 
-}
-let p = sum/classPoints.length;
-if(p<=yourPoints) return true
-if(p>yourPoints) return false
-}
-```
 #### Difference of Volumes of Cuboids
 ```javascript
 function findDifference(a, b) {
