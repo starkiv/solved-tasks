@@ -40,13 +40,6 @@ function pipeFix(n){
      return j
 }
 ```
-#### Calculate Price Excluding VAT
-```javascript
-function excludingVatPrice(p){
-  if (p===null) return -1
-  else return +(p/1.15).toFixed(2)
-}
-```
 #### Parse nice int from char problem
 ```javascript
 function getAge(inputString){
