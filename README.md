@@ -1321,10 +1321,3 @@ function uniqueNumbers(numbersArray) {
     return newArr
 }
 ```
-#### Enumerable Magic #25 - Take the First N Elements
-```javascript
-function take(arr, n) {
-  arr.splice(n)
-  return arr
-}
-```
