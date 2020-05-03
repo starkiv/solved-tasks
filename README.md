@@ -1321,3 +1321,22 @@ function uniqueNumbers(numbersArray) {
     return newArr
 }
 ```
+#### Split In Parts
+```javascript
+var splitInParts = function(s, partLength){
+
+  const arr = s.split('');
+  const newArr = [];
+  const newArr2 = [];
+  
+  for (let i = 0; i < arr.length; i+=partLength){
+      newArr.push(arr.slice(i, i + partLength))
+  }  
+  
+  for (let i = 0; i < newArr.length; i++){
+      newArr2.push(newArr[i].join(''))
+  }
+  
+  return newArr2.join(' ')
+}
+```
