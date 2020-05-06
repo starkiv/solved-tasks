@@ -1253,14 +1253,6 @@ function sentence(List) {
   }
   return str.trimRight();
 }
-
-
-function sentence(List) {
-  return List
-             .sort((a, b) => Object.keys(a)[0] - Object.keys(b)[0])
-             .map(el => Object.values(el)[0])
-             .join(' ')
-}
 ```
 #### Semi-Optional
 ```javascript
