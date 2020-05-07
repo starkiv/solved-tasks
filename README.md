@@ -117,18 +117,6 @@ let b1=1;
   return Math.abs(b1-a1)
 }
 ```
-#### Total amount of points
-```javascript
-function points(games) {
-let sum = 0;
-  for (let i=0; i<games.length; i++){
-     if (games[i][0] > games[i][2]) sum+=3
-     else if (games[i][2] > games[i][0]) sum+=0
-     else if (games[i][0] === games[i][2]) sum+=1
-  }
-  return sum
-}
-```
 #### How good are you really?
 ```javascript
 function betterThanAverage(classPoints, yourPoints) {
