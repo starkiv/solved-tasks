@@ -23,13 +23,6 @@ function findNextSquare(sq){
    else return arr[1] 
 }
 ```
-#### Formatting decimal places #1
-```javascript
-function twoDecimalPlaces(number) {
-if (number<0) return Math.ceil((number)*100)/100
-    else return Math.floor((number)*100)/100
-}
-```
 #### Lario and Muigi Pipe Problem
 ```javascript
 function pipeFix(n){
