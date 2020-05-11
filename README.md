@@ -1152,20 +1152,6 @@ const rooms = {
 };
 ```
 #### Blood-Alcohol Content
-```javascript
-function bloodAlcoholContent(drinks, weight, sex, time){
-
-  const obj = {
-      drinks, 
-      weight, 
-      sex, 
-      time
-  };
-
-  if (obj.sex === 'male') return +((obj.drinks.abv * obj.drinks.ounces * 5.14 / obj.weight * 0.73) - 0.015 * obj.time).toFixed(4)
-  else return +((obj.drinks.abv * obj.drinks.ounces * 5.14 / obj.weight * 0.66) - 0.015 * obj.time).toFixed(4)
-}
-```
 #### Training JS #12: loop statement --for..in and for..of
 ```javascript
 function giveMeFive(obj){
@@ -1257,15 +1243,6 @@ let count = 0;
   return count
 }
 
-function points(games) {
-let sum = 0;
-  for (let i=0; i<games.length; i++){
-     if (games[i][0] > games[i][2]) sum+=3
-     else if (games[i][2] > games[i][0]) sum+=0
-     else if (games[i][0] === games[i][2]) sum+=1
-  }
-  return sum
-}
 ```
 #### Unique numbers
 ```javascript
