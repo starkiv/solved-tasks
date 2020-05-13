@@ -1019,9 +1019,7 @@ function pickIt(arr){
       if (arr[i] % 2 === 1) odd.push(arr[i])
       else even.push(arr[i])
   }
-  return [odd,even];
-}
-```
+
 #### Highest and Lowest
 ```javascript
 function highAndLow(numbers){
