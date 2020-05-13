@@ -1014,8 +1014,6 @@ function noBoringZeros(n) {
 #### Training JS #10: loop statement --for
 ```javascript
 function pickIt(arr){
-  var odd=[],even=[];
-  for (let i = 0; i < arr.length; i++){
 
 #### Highest and Lowest
 ```javascript
