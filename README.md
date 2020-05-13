@@ -1011,8 +1011,6 @@ function noBoringZeros(n) {
     return +str.replace(/0+$/, '')
 }
 ```
-#### Training JS #10: loop statement --for
-
 #### Highest and Lowest
 ```javascript
 function highAndLow(numbers){
