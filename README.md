@@ -1012,8 +1012,6 @@ function noBoringZeros(n) {
 }
 ```
 #### Training JS #10: loop statement --for
-```javascript
-function pickIt(arr){
 
 #### Highest and Lowest
 ```javascript
