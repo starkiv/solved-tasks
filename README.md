@@ -1257,3 +1257,12 @@ function cutIt(arr){
   
 }
 ```
+#### Number of Decimal Digits
+```javascript
+function digits(n) {
+
+  const str = '' + n;
+
+  return str.length
+}
+```
