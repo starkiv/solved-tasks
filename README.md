@@ -1243,3 +1243,17 @@ var splitInParts = function(s, partLength){
   return newArr2.join(' ')
 }
 ```
+#### Training JS #16: Methods of String object--slice(), substring() and substr()
+```javascript
+function cutIt(arr){
+  
+  let num = [];
+  
+  const newArr = arr.map((el, i) => num.push(el.length))
+  
+  const newArr1 = arr.map((el) => el.slice(0, Math.min(...num)))
+  
+  return newArr1
+  
+}
+```
