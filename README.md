@@ -1271,3 +1271,10 @@ function digits(n) {
 ```javascript
 const multiply = (a, b) => a * b; 
 ```
+
+#### Nth Root of a Number
+```javascript
+function root(x, n) {
+  return Math.pow (x, 1/n)
+}
+```
