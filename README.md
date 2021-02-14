@@ -1266,3 +1266,8 @@ function digits(n) {
   return str.length
 }
 ```
+
+#### Function 3 - multiplying two numbers
+```javascript
+const multiply = (a, b) => a * b; 
+```
