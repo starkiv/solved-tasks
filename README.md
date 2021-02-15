@@ -1288,3 +1288,14 @@ function seatsInTheater(nCols, nRows, col, row) {
   return c*r;  
 }
 ```
+
+#### Area of an arrow
+```javascript
+function arrowArea(a,b) {
+  const c = (a ** 2 + b ** 2) ** 0.5;
+  const x = c / 2;
+  const y = (x + x + a) / 2;
+  const s = (y * (y - x) * (y - x) * (y - a)) ** 0.5;
+  return +s.toFixed(2);
+}
+```
