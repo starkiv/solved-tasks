@@ -1278,3 +1278,13 @@ function root(x, n) {
   return Math.pow (x, 1/n)
 }
 ```
+
+#### Simple Fun #1: Seats in Theater
+```javascript
+function seatsInTheater(nCols, nRows, col, row) {
+  
+  const c = (nCols - col) + 1;
+  const r = nRows - row;
+  return c*r;  
+}
+```
