@@ -1310,3 +1310,10 @@ function cookie(x){
   
 }
 ```
+
+#### Is Undefined?
+```javascript
+function isUndefined(value) {
+  return typeof value === 'undefined'? true : false;
+}
+```
