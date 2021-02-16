@@ -1317,3 +1317,22 @@ function isUndefined(value) {
   return typeof value === 'undefined'? true : false;
 }
 ```
+
+#### Magic bugs
+```javascript
+function magic(input)
+{
+  if (typeof input === "undefined")
+    return{
+
+        bar: "hello"
+    };
+  
+  else
+    return {
+
+        bar: "world"
+    };
+  
+}
+```
