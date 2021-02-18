@@ -1336,3 +1336,13 @@ function magic(input)
   
 }
 ```
+
+#### lucky number
+```javascript
+function isLucky(n) {
+  let str = String(n);
+  let res = (str.split('')).reduce((el1, el2) => +el1 + +el2);
+  if (res % 9 === 0) return true
+  else return false
+}
+```
