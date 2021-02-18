@@ -1346,3 +1346,15 @@ function isLucky(n) {
   else return false
 }
 ```
+
+#### Grasshopper - Debug
+```javascript
+function weatherInfo (temp) {
+  let celsius = (temp - 32) * (5/9);
+  if (celsius > 0){
+      return celsius + ' is above freezing temperature';
+  }else{
+      return celsius + ' is freezing temperature';
+  }
+}
+```
