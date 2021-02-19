@@ -1374,3 +1374,17 @@ var calculate = function calculate(a, o, b) {
  else return null;
 }
 ```
+
+#### Grasshopper - Grade book
+```javascript
+function getGrade (s1, s2, s3) {
+  
+  const s = (s1 + s2 + s3) / 3; 
+  if (s <= 100 && s >= 90) return 'A'
+  if (s < 90 && s >= 80) return 'B'
+  if (s < 80 && s >= 70) return 'C'
+  if (s < 70 && s >= 60) return 'D'
+  if (s < 60 && s >= 0) return 'F'
+
+}
+```
