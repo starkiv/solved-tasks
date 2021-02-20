@@ -1388,3 +1388,14 @@ function getGrade (s1, s2, s3) {
 
 }
 ```
+
+#### Find the sum of the roots of a quadratic equation
+```javascript
+function roots(a,b,c){
+  let descriminant = b ** 2 - 4 * a * c;
+  if (descriminant < 0) return null;
+  const x1 = +((-b + descriminant ** 0.5) / (2 * a));
+  const x2 = +((-b - descriminant ** 0.5) / (2 * a));
+  return +(x1 + x2).toFixed(2)
+}
+```
