@@ -1411,3 +1411,14 @@ function  calculateAge(a, b) {
 
 }
 ```
+
+#### Fuel Calculator
+```javascript
+function fuelPrice(litres, pricePerLitre) {
+  if (litres >= 2 && litres < 4) return +((pricePerLitre - 0.05) * litres).toFixed(2)
+  if (litres >= 4 && litres < 6) return +((pricePerLitre - 0.1) * litres).toFixed(2)
+  if (litres >= 6 && litres < 8) return +((pricePerLitre - 0.15) * litres).toFixed(2)
+  if (litres >= 8 && litres < 10) return +((pricePerLitre - 0.20) * litres).toFixed(2)
+  if (litres >= 10) return +((pricePerLitre - 0.25) * litres).toFixed(2)
+}
+```
