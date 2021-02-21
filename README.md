@@ -1422,3 +1422,14 @@ function fuelPrice(litres, pricePerLitre) {
   if (litres >= 10) return +((pricePerLitre - 0.25) * litres).toFixed(2)
 }
 ```
+
+#### Holiday VI - Shark Pontoon
+```javascript
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+  if (dolphin === true) sharkSpeed = sharkSpeed / 2;
+  const yourTime = pontoonDistance / youSpeed;
+  const sharkTime = sharkDistance / sharkSpeed;
+  if (yourTime < sharkTime) return "Alive!";
+  else return "Shark Bait!"
+}
+```
