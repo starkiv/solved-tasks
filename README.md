@@ -1440,3 +1440,12 @@ var return17 = function() {
   var a = 1; if (a == 5000) return 13; return 17;
 }
 ```
+
+#### Will there be enough space?
+```javascript
+function enough(cap, on, wait) {
+  const space = cap - on;
+  if (space < wait) return Math.abs(space - wait)
+  else return 0
+}
+```
