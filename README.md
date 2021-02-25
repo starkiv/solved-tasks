@@ -1449,3 +1449,26 @@ function enough(cap, on, wait) {
   else return 0
 }
 ```
+
+#### Cat years, Dog years
+```javascript
+const humanYearsCatYearsDogYears = function(humanYears) {
+  let catYears = 24;
+  let dogYears = 24;
+  if (humanYears === 1){ 
+    catYears = 15 
+    dogYears = 15 } 
+  if (humanYears === 2){
+    catYears = 24 
+    dogYears = 24
+  }
+  if (humanYears >= 3){
+    for (let i = 3; i <= humanYears; i++){
+      catYears += 4
+      dogYears += 5
+    }  
+  }
+  
+  return [humanYears,catYears,dogYears];
+}
+```
