@@ -1500,3 +1500,16 @@ function perfectRoots(n){
   else return false
 }
 ```
+
+
+#### Are You Playing Banjo?
+```javascript
+function areYouPlayingBanjo(name) {
+if(name[0]==="R" || name[0]==='r'){
+  return name+" plays banjo";
+  }
+  else{
+  return name+" does not play banjo";
+}
+}
+```
