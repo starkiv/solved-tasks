@@ -1472,3 +1472,13 @@ const humanYearsCatYearsDogYears = function(humanYears) {
   return [humanYears,catYears,dogYears];
 }
 ```
+
+#### Area or Perimeter
+```javascript
+const areaOrPerimeter = function(l , w) {
+  const area = l * w;
+  const perimeter = l * 2 + w * 2;
+  if (l === w) return area
+  else return perimeter
+};
+```
