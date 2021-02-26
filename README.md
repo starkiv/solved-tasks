@@ -1482,3 +1482,10 @@ const areaOrPerimeter = function(l , w) {
   else return perimeter
 };
 ```
+
+#### This is odd
+```javascript
+function isOdd(n) {
+  return Math.abs(n) % 2 === 1 ? true : false
+}
+```
