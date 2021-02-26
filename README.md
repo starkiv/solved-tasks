@@ -1489,3 +1489,14 @@ function isOdd(n) {
   return Math.abs(n) % 2 === 1 ? true : false
 }
 ```
+
+#### number with 3 roots.
+```javascript
+function perfectRoots(n){
+  const th2 = n ** 0.5;
+  const th4 = n ** 0.25;
+  const th8 = n ** (1/8);
+  if ((th4 === Math.trunc(th4))&&(th2 === Math.trunc(th2))&&(th8 === Math.trunc(th8))) return true
+  else return false
+}
+```
