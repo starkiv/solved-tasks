@@ -1434,15 +1434,6 @@ function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
 }
 ```
 
-#### Will there be enough space?
-```javascript
-function enough(cap, on, wait) {
-  const space = cap - on;
-  if (space < wait) return Math.abs(space - wait)
-  else return 0
-}
-```
-
 #### Cat years, Dog years
 ```javascript
 const humanYearsCatYearsDogYears = function(humanYears) {
