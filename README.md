@@ -1507,3 +1507,36 @@ function plural(n) {
   }
 }
 ```
+
+#### Cat Years, Dog Years (2)
+```javascript
+const ownedCatAndDog = function(catYears, dogYears) {
+  const arr = [];
+  let sum1 = Math.trunc(2 + (catYears - 24) / 4);
+  let sum2 = Math.trunc(2 + (dogYears - 24) / 5);
+  if (catYears < 15) arr[0] = 0;
+  if (dogYears < 15) arr[1] = 0;
+  if (catYears === 15 || (catYears < 24 && catYears > 15)) arr[0] = 1;;
+  if (dogYears === 15 || (dogYears < 24 && dogYears > 15)) arr[1] = 1;;
+  if (catYears === 24) arr[0] = 2;;
+  if (dogYears === 24) arr[1] = 2;;
+  if (catYears > 24) arr[0] = sum1;
+  if (dogYears > 24) arr[1] = sum2;
+  return arr
+}
+```
+
+#### Triangular Treasure
+```javascript
+function triangular( n ) {
+  
+  let arr = [];
+  
+  for (let i = 1; i <= n; i++){
+    arr.push(1)
+  }
+  
+  return n > 0 ? arr.map((a, b) => a + b).reduce((a, b) => a + b) : 0
+  
+}
+```
