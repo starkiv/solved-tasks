@@ -1540,3 +1540,13 @@ function triangular( n ) {
   
 }
 ```
+#### Training JS #34: methods of Math---pow() sqrt() and cbrt()
+```javascript
+function isIntCube(n) {
+  return Number.isInteger(Math.cbrt(n));
+}
+
+function cutCube(volume, n) {
+  return isIntCube(n) && isIntCube(volume / n);
+}
+```
