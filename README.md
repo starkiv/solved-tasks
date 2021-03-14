@@ -1550,3 +1550,20 @@ function cutCube(volume, n) {
   return isIntCube(n) && isIntCube(volume / n);
 }
 ```
+
+#### Figurate Numbers #2 - Pronic Number
+```javascript
+function isPronic(n){
+  
+  let arr = [];
+  
+  for (let i = 0; i <= n; i++){
+    arr.push(i * (i + 1));
+  }
+  let result;
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] === n) result = arr[i]
+  }
+  return result === n
+}
+```
