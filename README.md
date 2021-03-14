@@ -1567,3 +1567,14 @@ function isPronic(n){
   return result === n
 }
 ```
+
+#### Sum of Triangular Numbers
+```javascript
+function sumTriangularNumbers(n) {
+  let res = 0;
+  for (let i = 0; i <= n; i++){
+    res += i * (i + 1) / 2;
+  }
+  return res
+}
+```
