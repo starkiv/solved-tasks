@@ -1612,3 +1612,17 @@ function howManydays(month) {
   }
 }
 ```
+
+#### Money, Money, Money
+```javascript
+function calculateYears(principal, interest, tax, desired) {
+  
+    let year = 0;
+    let another = desired - principal;
+    while (principal < desired){
+      principal = principal + (principal * interest) - (principal * interest * tax)
+      year++
+    }
+  return year
+}
+```
