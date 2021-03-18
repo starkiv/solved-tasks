@@ -1626,3 +1626,13 @@ function calculateYears(principal, interest, tax, desired) {
   return year
 }
 ```
+
+#### Finding Remainder Without Using '%' Operator
+```javascript
+const remainder = (D, d) =>{
+  while (D >= d){
+    D = D - d;
+  }
+  return D;
+};
+```
