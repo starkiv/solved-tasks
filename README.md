@@ -1636,3 +1636,15 @@ const remainder = (D, d) =>{
   return D;
 };
 ```
+
+#### Multiply the number
+```javascript
+function multiply(number){
+  let str = String(Math.abs(number));
+  let count = 0;
+  for (let i = 0; i < str.length; i++){
+     count++ 
+  }
+  return number * (5 ** count)
+}
+```
