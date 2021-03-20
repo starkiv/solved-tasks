@@ -1648,3 +1648,14 @@ function multiply(number){
   return number * (5 ** count)
 }
 ```
+
+#### Boiled Eggs
+```javascript
+function cookingTime(eggs) {
+  let count = 0;
+  for (let i = 0; i < eggs; i += 8) {
+    count += 5
+  }
+  return count;
+}
+```
