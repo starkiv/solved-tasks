@@ -1659,3 +1659,11 @@ function cookingTime(eggs) {
   return count;
 }
 ```
+
+#### Dan's great power generator
+```javascript
+function danspower(num, power) {
+    if (Math.pow(num, power) % 2 === 1) return Math.round(Math.pow(num, power) * 0.1) * 10
+    else return Math.pow(num, power)
+}
+```
