@@ -1667,3 +1667,22 @@ function danspower(num, power) {
     else return Math.pow(num, power)
 }
 ```
+
+#### Calculator: Coin Combination
+```javascript
+var coinCombo = function(cents) {
+  const arr = [1, 5, 10, 25];
+  const newArr = [0, 0, 0, 0];
+  let i;
+  for (let i = cents; i > 0;){
+    for (let j = arr.length; j >= 0; j--){
+      if (arr[j] <= i){ 
+        newArr[j] += 1; 
+        i -= arr[j];
+        break;
+        }
+    }
+  }
+  return newArr
+}
+```
