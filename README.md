@@ -1693,3 +1693,15 @@ function minMax(arr){
   return [Math.min(...arr),Math.max(...arr)]; // fix me!
 }
 ```
+
+#### Sum of Minimums!
+```javascript
+function sumOfMinimums(arr) {
+  // your code here
+  let result = 0;
+  for (let i = 0; i < arr.length; i++) {
+    result += Math.min(...arr[i]);
+  }
+  return result;
+}
+```
