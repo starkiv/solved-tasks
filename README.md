@@ -1686,3 +1686,10 @@ var coinCombo = function(cents) {
   return newArr
 }
 ```
+
+#### The highest profit wins!
+```javascript
+function minMax(arr){
+  return [Math.min(...arr),Math.max(...arr)]; // fix me!
+}
+```
