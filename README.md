@@ -1705,3 +1705,20 @@ function sumOfMinimums(arr) {
   return result;
 }
 ```
+#### How many consecutive numbers are needed?
+```javascript
+function consecutive(arr) {
+  let count1 = 0;
+  let count2 = 0;
+  
+  for (let i = Math.min(...arr); i <= Math.max(...arr); i++){
+    count1++
+  }
+  
+  for (let i = 0; i < arr.length; i++){
+    count2++
+  }
+  
+  return count1 - count2
+}
+```
