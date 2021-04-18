@@ -1722,3 +1722,9 @@ function consecutive(arr) {
   return count1 - count2
 }
 ```
+#### Between Extremes
+```javascript
+function betweenExtremes(numbers) {
+    return Math.max(...numbers) - Math.min(...numbers);
+}
+```
