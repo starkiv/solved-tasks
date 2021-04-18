@@ -1728,3 +1728,9 @@ function betweenExtremes(numbers) {
     return Math.max(...numbers) - Math.min(...numbers);
 }
 ```
+#### Find min and max
+```javascript
+function getMinMax(arr){
+  return [Math.min(...arr),Math.max(...arr)];
+};
+```
