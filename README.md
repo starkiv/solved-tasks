@@ -1697,7 +1697,6 @@ function minMax(arr){
 #### Sum of Minimums!
 ```javascript
 function sumOfMinimums(arr) {
-  // your code here
   let result = 0;
   for (let i = 0; i < arr.length; i++) {
     result += Math.min(...arr[i]);
