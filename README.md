@@ -1770,3 +1770,19 @@ function generateIntegers(m, n) {
   return arr;
 }
 ```
+#### Clean up after your dog
+```javascript
+function crap(x, bags, cap){
+  let count = 0;
+  let dogs = 0;
+  for (let i = 0; i < x.length; i++){
+    for (let j = 0; j < x[i].length; j++){
+      if (x[i][j] === '@') count++
+      if (x[i][j] === 'D') dogs++
+      }
+  }
+  if (dogs > 0) return 'Dog!!' 
+  if (count <= bags * cap) return 'Clean'
+  else return 'Cr@p'
+}
+```
