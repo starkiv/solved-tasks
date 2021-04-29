@@ -1801,3 +1801,13 @@ function solve(a, b) {
   if (aliceCount === bobCount) return `${aliceCount}, ${bobCount}: that looks like a "draw"! Rock on!`
 }
 ```
+#### Simple consecutive pairs
+```javascript
+function pairs(ar){
+  let count = 0;
+ for (let i = 0; i < ar.length; i+=2){
+   if ((ar[i] + 1 === ar[i + 1]) || (ar[i] - 1 === ar[i + 1])) count++
+ }
+  return count
+};
+```
