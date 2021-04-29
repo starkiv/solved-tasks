@@ -1786,3 +1786,18 @@ function crap(x, bags, cap){
   else return 'Cr@p'
 }
 ```
+#### Rock Off!
+```javascript
+function solve(a, b) {
+  let aliceCount = 0;
+  let bobCount = 0;
+  for (let i = 0; i < a.length; i++){
+      if (a[i] > b[i]) aliceCount++
+      if (a[i] < b[i]) bobCount++
+  }
+  
+  if (aliceCount > bobCount) return `${aliceCount}, ${bobCount}: Alice made "Kurt" proud!`
+  if (aliceCount < bobCount) return `${aliceCount}, ${bobCount}: Bob made "Jeff" proud!`
+  if (aliceCount === bobCount) return `${aliceCount}, ${bobCount}: that looks like a "draw"! Rock on!`
+}
+```
