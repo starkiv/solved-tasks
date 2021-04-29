@@ -1832,3 +1832,14 @@ const number = function(busStops){
   return count
 }
 ```
+#### Sum even numbers
+```javascript
+function sumEvenNumbers(input) {
+let count = 0;
+  for(let i = 0; i < input.length; i++){
+  if(input[i] % 2 === 0){
+  count += input[i];
+  }
+  } return count;
+}
+```
