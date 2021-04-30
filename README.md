@@ -1843,3 +1843,15 @@ let count = 0;
   } return count;
 }
 ```
+#### Simple Fun #152: Invite More Women?
+```javascript
+function inviteMoreWomen(L) {
+  let countW = 0;
+  let countM = 0;
+  for (let i = 0; i < L.length; i++){
+    if (L[i] < 0) countW++
+    else countM++
+  }
+  return countW < countM
+}
+```
