@@ -1855,3 +1855,28 @@ function inviteMoreWomen(L) {
   return countW < countM
 }
 ```
+#### Basic Sequence Practice
+```javascript
+function sumOfN(n) {
+  const arr = [];
+  if (n >= 0) {
+    for (let i = 0; i <= n; i++){
+      let x = 0;
+      for (let j = 0; j <= i; j++){
+        x = x + j
+      }
+      arr.push(x)
+    }
+  } else {
+    for (let i = 0; i >= n; i--){
+      let x = 0;
+      for (let j = 0; j >= i; j--){
+        x = x - j
+      }
+      if (x != 0) arr.push(-x)
+      else arr.push(x)
+  }
+  }
+  return arr
+};
+```
