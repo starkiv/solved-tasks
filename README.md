@@ -1890,3 +1890,15 @@ function multiples(s1,s2,s3){
   return multipleNumbers
 }
 ```
+#### Find Multiples of a Number
+```javascript
+function findMultiples(integer, limit) {
+  const arr = [];
+  for (let i = integer; i<= limit; i++){
+    if(i % integer === 0){
+      arr.push(i);
+      }
+    }
+  return arr;
+}
+```
