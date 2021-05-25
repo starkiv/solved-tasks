@@ -1902,3 +1902,17 @@ function findMultiples(integer, limit) {
   return arr;
 }
 ```
+#### Backspaces in string
+```javascript
+function cleanString(s) {
+  let strToArr = s.split('');
+  let arr = [];
+  
+  for (let i = 0; i < strToArr.length; i++){
+    if (strToArr[i] === '#') arr.pop()
+    else arr.push(strToArr[i])
+  }
+  
+  return arr.join('')
+};
+```
